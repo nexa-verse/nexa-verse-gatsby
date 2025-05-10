@@ -4,8 +4,12 @@ const ContactPage = () => {
   return (
     <main >
       <h1>Skontaktuj się z nami</h1>
-      <form name="kontakt" method="POST" netlify>
-        <input type="hidden" name="kontakt" value="kontakt" />
+      <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field">
+        {/* Ukryte pole dla botów */}
+        <input type="hidden" name="form-name" value="kontakt" />
+        <p hidden>
+          <label>Nie wypełniaj tego pola: <input name="bot-field" /></label>
+        </p>
         <div>
           <label htmlFor="email">Your Email:</label>
           <input type="email" name="email" />
@@ -16,18 +20,6 @@ const ContactPage = () => {
         </div>
         <button type="submit">Send</button>
       </form>
-      {/* Fallback formularz tylko po to, by Netlify go wykrył */}
-      <div
-        hidden
-        dangerouslySetInnerHTML={{
-          __html: `
-          <form name="kontakt" netlify>
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
-        `,
-        }}
-      />
     </main>
   )
 }
