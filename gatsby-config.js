@@ -6,7 +6,13 @@ module.exports = {
     title: `Nexa Verse`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image","gatsby-plugin-netlify", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    "gatsby-plugin-netlify", 
+    "gatsby-plugin-sharp", 
+    "gatsby-transformer-sharp",
+    {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

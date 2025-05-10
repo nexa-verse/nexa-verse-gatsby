@@ -1,0 +1,23 @@
+// import utilities
+
+@import './utils/variables';
+@import './utils/typography';
+
+
+// import base settings
+
+@import './base/reset';
+
+
+
+// import components styles
+
+@import './components/layout';
+@import './components/buttons';
+@import './components/header';
+@import './components/footer';
+@import './components/in-build';
+@import './components/contact-form';
+
+// import pages styles
+

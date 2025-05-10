@@ -3,15 +3,16 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import InBuild from "../components/InBuild"
 
-const NotFoundPage = () => {
+const ServicesPage = () => {
   return (
     <>
-      <Seo title='Strona nie istnieje' description="Nie znaleziono strony pod tym adresem" />
+      <Seo title="Usługi" description="Sprawdź co możemy dla Ciebie zrobić!" />
       <Layout>
         <InBuild/>
       </Layout>
     </>
+      
   )
 }
 
-export default NotFoundPage
+export default ServicesPage

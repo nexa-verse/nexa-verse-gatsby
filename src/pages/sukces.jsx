@@ -1,13 +1,18 @@
 import * as React from "react"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import InBuild from "../components/InBuild"
 
 const SuccessPage = () => {
   return (
-    <main >
-      <h1>Sukces</h1>
-    </main>
+    <>
+      <Seo description="Formularz wysłany" />
+      <Layout>
+        <InBuild/>
+      </Layout>
+    </>
+      
   )
 }
 
 export default SuccessPage
-
-export const Head = () => <title>Contact Page | Success</title>
