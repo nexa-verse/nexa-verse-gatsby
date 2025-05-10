@@ -16,6 +16,18 @@ const ContactPage = () => {
         </div>
         <button type="submit">Send</button>
       </form>
+      {/* Fallback formularz tylko po to, by Netlify go wykrył */}
+      <div
+        hidden
+        dangerouslySetInnerHTML={{
+          __html: `
+          <form name="kontakt" netlify>
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>
+        `,
+        }}
+      />
     </main>
   )
 }
