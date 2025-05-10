@@ -12,9 +12,14 @@ const ContactPage = () => {
         </div>
         <div>
           <label>Message:</label>
-          <textarea name="message" />
+          <textarea name="message"></textarea>
         </div>
         <button type="submit">Send</button>
+      </form>
+      {/* Hidden static version for Netlify detection */}
+      <form name="kontakt" netlify hidden>
+        <input type="text" name="email" />
+        <textarea name="message"></textarea>
       </form>
     </main>
   )
