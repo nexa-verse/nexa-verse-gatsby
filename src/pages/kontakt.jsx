@@ -7,11 +7,11 @@ const ContactPage = () => {
       <form name="kontakt" method="POST" action="/sukces" netlify>
         <input type="hidden" name="kontakt" value="kontakt" />
         <div>
-          <label>Your Email:</label>
+          <label htmlFor="email">Your Email:</label>
           <input type="email" name="email" />
         </div>
         <div>
-          <label>Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea name="message"></textarea>
         </div>
         <button type="submit">Send</button>
