@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <main >
       <h1>Skontaktuj się z nami</h1>
-      <form name="kontakt" method="POST" action="/sukces" netlify>
+      <form name="kontakt" method="POST" netlify>
         <input type="hidden" name="kontakt" value="kontakt" />
         <div>
           <label htmlFor="email">Your Email:</label>
