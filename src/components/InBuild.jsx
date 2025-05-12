@@ -2,6 +2,9 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { PiMapPinAreaFill } from "react-icons/pi";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { LuSend } from "react-icons/lu";
+import Button from './reusable/Button'
+import { Link } from 'gatsby';
 
 const InBuild = () => {
   return (
@@ -14,6 +17,7 @@ const InBuild = () => {
             <p className="text"><FaPhone/>+48 789 173 186</p>
             <p className="text"><FaEnvelope/>kontakt@nexa-verse.pl</p>
         </div>
+        <Link to='/kontakt'><Button icon={<LuSend/>} modifier='filled'>Napisz do nas!</Button></Link>
     </section>
   )
 }

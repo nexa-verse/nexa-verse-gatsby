@@ -1,3 +1,120 @@
 .contact-form{
-    margin-top: 6rem;
+    background-color: $color-secondary;
+    color: $color-primary;
+    padding: $padding-medium;
+    padding-top: $padding-xs;
+    padding-bottom: $padding-small;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $padding-medium;
+    .form {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+
+            /* Firefox */
+            input[type=number] {
+            -moz-appearance: textfield;
+            }
+            .button{
+                margin: $padding-small 0;
+                margin-top: $padding-medium;
+            }
+            .radio-buttons{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: $padding-small;
+                label{
+                        cursor: pointer;
+                    }
+                input{
+                    margin-left: 2rem;
+                    position: relative;
+                    
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -1rem;
+                        width: 1rem;
+                        height: 1rem;
+                        background-color: $color-secondary;
+                        border-radius: 2px;
+                        border: 1px solid $color-primary;
+                        transform: translate(-100%, -100%);
+                        cursor: pointer;
+                    }
+                    &:checked{
+                        &::before{
+                            background-color: $color-primary;
+                        }
+                    }
+                }
+            }
+            .branch_field{
+                margin-left: 2px;
+                margin-bottom: $padding-xs;
+                margin-top: $padding-xs;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                label{
+                    margin-bottom: $padding-small;
+                }
+
+            }
+            .field{
+                margin: $padding-small 0;
+                margin-left: 2px;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                input{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    position: relative;
+                    border-bottom: 1px solid $color-primary;
+                    height: 2rem;
+                }
+            }
+            
+        }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $padding-medium;
+        width: 100%;
+        @media (max-width: $media-medium){
+            grid-template-columns: 1fr;
+        }
+        
+        .message{
+            grid-column: 1 / span 2;
+            width: 100%;
+            position: relative;
+            textarea {
+                border: 1px solid $color-primary;
+                outline: none;
+                resize: none;
+                width: 100%;
+                padding: 1rem;
+                margin-top: $padding-xs;
+            }
+        }
+    }
 }

@@ -11,6 +11,7 @@ const Seo = ({ title, description }) => {
     <Helmet>
       <title>{fullTitle}</title>
       {description && <meta name="description" content={description} />}
+      <link rel="stylesheet" href="https://use.typekit.net/wnw6xad.css"></link>
     </Helmet>
   );
 };

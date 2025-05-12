@@ -67,7 +67,7 @@
         }
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $media-medium) {
     .navbar{        
         padding: $padding-small $padding-big;
         .hamburger, .menu-mobile{

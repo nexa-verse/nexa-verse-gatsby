@@ -26,4 +26,8 @@
             transform: scale(1.02);
         }
     }
+    &.accent{
+        background-color: $color-accent2;
+        color: $color-primary;
+    }
 }
