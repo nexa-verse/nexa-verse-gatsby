@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Button from './reusable/Button'
 import { Link } from 'gatsby'
-import {IoMenu} from 'react-icons/io5'
+import {IoClose, IoMenu} from 'react-icons/io5'
 import { FaPhone } from 'react-icons/fa'
 import { MdConnectWithoutContact } from "react-icons/md";
 
@@ -38,15 +38,15 @@ const Header = () => {
       <ul className={`menu-mobile ${isMobileMenuOpened ? 'menu-mobile--opened' : ''}`}>
         <div className="menu-mobile__links">
           <li className='link'>
-            <Link to='/o-nas'>O nas</Link>
+            <Link to='/o-nas' onClick={() => setIsMobileMenuOpened(false)}>O nas</Link>
           </li>
           <li className='link'>
-            <Link to='/uslugi'>Usługi</Link>
+            <Link to='/uslugi' onClick={() => setIsMobileMenuOpened(false)}>Usługi</Link>
           </li>
           <li className='link'>
-            <Link to='/realizacje'>Realizacje</Link>
+            <Link to='/realizacje' onClick={() => setIsMobileMenuOpened(false)}>Realizacje</Link>
           </li>
-          <Link to='/kontakt'>
+          <Link to='/kontakt' onClick={() => setIsMobileMenuOpened(false)}>
             <Button icon={<MdConnectWithoutContact/>} modifier='filled'>
             Skontaktuj się z nami!
             </Button>
@@ -55,7 +55,7 @@ const Header = () => {
         
       </ul>
       <button className="hamburger" onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)}>
-        <IoMenu/>
+        {isMobileMenuOpened ? <IoClose/> : <IoMenu/>}
       </button>
     </nav>
   )
