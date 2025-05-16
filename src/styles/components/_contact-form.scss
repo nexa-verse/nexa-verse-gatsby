@@ -4,12 +4,12 @@
     padding: $padding-medium;
     padding-top: $padding-xs;
     padding-bottom: $padding-small;
-    border-radius: 8px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     margin-bottom: $padding-medium;
+    margin-top: $padding-big;
     .form {
             display: flex;
             flex-flow: column nowrap;
@@ -21,7 +21,6 @@
             -webkit-appearance: none;
             margin: 0;
             }
-
             /* Firefox */
             input[type=number] {
             -moz-appearance: textfield;
@@ -95,15 +94,16 @@
             
         }
     .grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: $padding-medium;
-        width: 100%;
-        @media (max-width: $media-medium){
-            grid-template-columns: 1fr;
-        }
-        
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%; 
+        gap: $padding-small;
+        .fieldset{
+            min-width: 100%;
+        }       
         .message{
+            margin-top: $padding-small;
             grid-column: 1 / span 2;
             width: 100%;
             position: relative;
@@ -114,6 +114,20 @@
                 width: 100%;
                 padding: 1rem;
                 margin-top: $padding-xs;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $media-medium) {
+    .contact-form{        
+        border-radius: 8px;
+        .form{
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: $padding-medium;
+                align-items: start;
             }
         }
     }

@@ -14,11 +14,11 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
     }
     .text svg{
         font-size: 1.5rem;
-        margin: $padding-xs;
+        margin-right: .2rem;
     }
     .headline{
         color: $color-accent2;
@@ -26,10 +26,26 @@
     .container {
         display: flex;  
         flex-wrap: nowrap;
-        flex-direction: row;
-        gap: 4rem;
+        flex-direction: column;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
         
     }
+}
+
+@media screen and (min-width: $media-medium) {
+    .in-build{
+        .text{
+            text-align: center;
+            svg{
+                margin: $padding-xs;
+            }
+        }
+        .container{
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+    
 }
