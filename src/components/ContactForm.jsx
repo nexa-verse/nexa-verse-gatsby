@@ -4,7 +4,7 @@ import { LuSend } from "react-icons/lu";
 
 const ContactForm = () => {
   return (
-    <section className='contact-form'>
+    <section className='contact-form' id='form'>
         <h2 className='subheadline'>📬 czekamy na twoją wiadomość!</h2>
         <form className='form' name="kontakt" method="POST" netlify netlify-honeypot="bot-field">
           {/* Ukryte pole dla botów */}
@@ -13,7 +13,7 @@ const ContactForm = () => {
             <label>Nie wypełniaj tego pola: <input name="bot-field" /></label>
           </p>
           <div className="grid">
-            <fieldset>
+            <fieldset className='fieldset'>
             <legend className='text-buttons'>Dane osobowe</legend>
             <div className='field'>
                 <label htmlFor="full name">Podaj swoje imię i nazwisko:</label>
@@ -28,7 +28,7 @@ const ContactForm = () => {
                 <input type="tel" name="phone" />
             </div>
             </fieldset>
-            <fieldset>
+            <fieldset className='fieldset'>
                 <legend className='text-buttons'>Dane firmowe</legend>
                 <div className='field'>
                     <label htmlFor="company_name">Podaj nazwę firmy:</label>

@@ -1,0 +1,12 @@
+.signet{
+    width: 100px;
+    height: 64px;
+    margin: $padding-medium auto;
+}
+
+@media screen and (min-width: $media-medium) {
+    .signet{
+        margin: $padding-big auto;
+    }
+    
+}

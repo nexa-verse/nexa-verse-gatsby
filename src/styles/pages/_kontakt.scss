@@ -1,0 +1,123 @@
+.contact-hero{
+    margin-top: $padding-big;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $padding-xs;
+    position: relative;
+    .button{
+        min-width: 12rem;
+    }
+    .headline{
+        text-align: center;
+    }
+    .text-buttons{
+        color: $color-accent2;
+        text-align: center;
+    }
+    .reviews{
+        bottom: -$padding-medium;
+        left: 50%;
+        // transform: translate(-50%, 50%);
+        height: 4rem;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        justify-content: center;
+        gap: $padding-xs;
+        background-color: $color-secondary;
+        .review-card{
+            font-size: 3rem;
+            padding: $padding-xs;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            svg{
+                    margin-right: $padding-xs;
+                }
+            .review-icon{
+                height: 3rem !important;
+                
+                img{
+                    object-fit: contain !important;
+                }
+            }
+            .review-title{
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $color-primary;
+            }
+        }
+    }
+}
+.contact-cards{
+    margin-top: $padding-medium;
+    margin-bottom: $padding-medium;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    .card{
+        padding: $padding-small;
+        border-radius: 8px;
+        background-color: $color-primary-light;
+        min-width: 15rem;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        align-items: center;
+        color: $color-primary;
+        .text{
+            color: $color-primary;
+        }
+        .info{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: $padding-xs;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .icon{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: $media-medium) {
+    .contact-hero{
+        gap: $padding-medium;
+        .buttons-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: $padding-small;
+        }
+        .text{
+            max-width: 800px;
+        }
+        .reviews{
+            min-width: 0;
+            min-width: 30%;
+            border-radius: 8px;
+            height: 5rem;
+            padding:$padding-small;
+            gap: $padding-medium;
+            img{
+                padding-right: $padding-xs;
+            }
+        }
+    }
+    .contact-cards{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: $padding-medium;
+    }
+}

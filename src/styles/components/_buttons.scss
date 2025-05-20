@@ -26,6 +26,15 @@
             transform: scale(1.02);
         }
     }
+    &--outlined{
+        color: $color-accent2;
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+        &:hover{
+            transition: transform 0.2s ease-in-out;
+            transform: scale(1.02);
+        }
+    }
     &.accent{
         background-color: $color-accent2;
         color: $color-primary;

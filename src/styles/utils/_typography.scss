@@ -21,11 +21,13 @@
 }
 .text{
     font-size: 1rem;
+    line-height: 1.35rem;
     font-family: $font-primary;
     font-weight: normal;
     margin-top: $padding-xs;
     margin-bottom: $padding-xs;
     color: $color-secondary;
+    text-align: center;
 }
 .text-buttons {
     font-size: 1.25rem;
@@ -33,4 +35,5 @@
     font-weight: 500;
     margin-top: $padding-xs;
     margin-bottom: $padding-xs;
+
 }
