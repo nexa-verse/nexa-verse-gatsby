@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './reusable/Button'
 import { LuSend } from "react-icons/lu";
+import Input from './reusable/Input';
 
 const ContactForm = () => {
   return (
@@ -15,29 +16,14 @@ const ContactForm = () => {
           <div className="grid">
             <fieldset className='fieldset'>
             <legend className='text-buttons'>Dane osobowe</legend>
-            <div className='field'>
-                <label htmlFor="full name">Podaj swoje imię i nazwisko:</label>
-                <input type='text' name="full name"/>
-            </div>
-            <div className='field'>
-                <label htmlFor="email">Podaj kontaktowy adres email:</label>
-                <input type="email" name="email" />
-            </div>
-            <div className='field'>
-                <label htmlFor="phone">Podaj numer telefonu:</label>
-                <input type="tel" name="phone" />
-            </div>
+            <Input name={'full name'} label={'Podaj swoje imię i nazwisko:'} />
+            <Input name={'email'} type={'email'} label={'Podaj kontaktowy adres email:'} />
+            <Input name={'phone'} type={'tel'} label={'Podaj numer telefonu:'} />
             </fieldset>
             <fieldset className='fieldset'>
                 <legend className='text-buttons'>Dane firmowe</legend>
-                <div className='field'>
-                    <label htmlFor="company_name">Podaj nazwę firmy:</label>
-                    <input type='text' name="company_name"/>
-                </div>
-                <div className='field'>
-                    <label htmlFor="company_nip">Podaj numer NIP firmy:</label>
-                    <input type="number" name="company_nip" />
-                </div>
+                <Input name={'company_name'} label={'Podaj nazwę firmy:'} />
+                <Input name={'company_nip'} type={'number'} label={'Podaj numer NIP firmy:'} />
                 <div className='branch_field'>
                     <label htmlFor="company_branch">Wybierz branżę:</label>
                     <fieldset className='radio-buttons'>

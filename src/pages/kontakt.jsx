@@ -9,9 +9,10 @@ import { MdOutlineHandshake } from "react-icons/md";
 import { LuSend } from "react-icons/lu";
 import { FcGoogle } from "react-icons/fc";
 import { StaticImage } from "gatsby-plugin-image";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import Signet from "../components/reusable/Signet";
+import Newsletter from "../components/Newsletter";
 
 const ContactPage = () => {
   return (
@@ -62,6 +63,17 @@ const ContactPage = () => {
         </section>
         <ContactForm id="form"/>
         <Signet/>
+        <section className="socials">
+          <h2 className="subheadline">Gdzie nas znaleźć?</h2>
+          <h3 className="text-buttons">🌐 Jesteśmy też w mediach społecznościowych!</h3>
+          <p className="text">Zajrzyj na nasze profile, by być na bieżąco z nowinkami technologicznymi, kulisami naszej pracy i inspirującymi case studies. Pokażemy Ci, jak wygląda nasze podejście do IT w praktyce — prosto, konkretnie i z pasją. Dołącz do naszej społeczności i bądź częścią NexaVerse! 🚀</p>
+          <div className="socials__icons">
+            <a href="https://www.facebook.com/profile.php?id=61576380753168" target="blank"><FaFacebook className="social-icon social-icon--fb"/></a>
+            <a href="https://www.instagram.com/nexaversepl/" target="blank"><FaInstagram className="social-icon social-icon--insta"/></a>
+            <a href="http://linkedin.com/company/nexa-verse-pl" target="blank"><FaLinkedin className="social-icon social-icon--linkedin"/></a>
+          </div>
+        </section>
+        <Newsletter/>
       </Layout>
     </>
     

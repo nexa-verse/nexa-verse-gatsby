@@ -1,0 +1,20 @@
+.field{
+    margin: $padding-small 0;
+    margin-left: 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    .newsletter{
+        display: none;
+    }
+    input{
+        border: none;
+        outline: none;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid $color-primary;
+        height: 2rem;
+    }
+}

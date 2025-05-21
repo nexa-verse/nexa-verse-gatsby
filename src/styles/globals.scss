@@ -13,12 +13,18 @@
 // import components styles
 
 @import './components/layout';
+
+//reusable components
+@import './components/input';
 @import './components/signet';
 @import './components/buttons';
+
+// specific components
 @import './components/header';
 @import './components/footer';
 @import './components/in-build';
 @import './components/contact-form';
+@import './components/newsletter';
 
 // import pages styles
 

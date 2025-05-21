@@ -1,0 +1,46 @@
+.newsletterBox{
+    background-color: $color-accent1;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: $padding-medium;
+    max-width: 57rem;
+    margin-bottom: $padding-big;
+    border-radius: 8px;
+    .text{
+        color: $color-primary;
+    }
+    .subheadline{
+        color: $color-primary;
+    }
+    .small-print{
+        color: $color-primary;
+    }
+    .field {
+        position: relative;
+        .contact{
+            display: none;
+        }
+        .newsletter {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -3px);
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+        }
+        input {
+            background-color: transparent;
+        }
+        input:focus + .newsletter,
+        input:focus-visible + .newsletter {
+            transform: translate(0,-50%);
+            top: 0;
+            left: 0;
+
+        }
+    }
+}

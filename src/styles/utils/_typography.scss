@@ -37,3 +37,13 @@
     margin-bottom: $padding-xs;
 
 }
+.small-print{
+    font-size: .8rem;
+    line-height: 1rem;
+    font-family: $font-primary;
+    font-weight: normal;
+    margin-top: $padding-xs;
+    margin-bottom: $padding-xs;
+    color: $color-secondary;
+    text-align: center;
+}
