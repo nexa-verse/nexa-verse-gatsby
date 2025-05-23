@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Button from './reusable/Button'
 import { Link } from 'gatsby'
@@ -9,9 +9,18 @@ import { MdConnectWithoutContact } from "react-icons/md";
 const Header = () => {
 
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar${isScrolled || isMobileMenuOpened ? ' navbar--scrolled' : ''}`}>
       <Link className="logo" to='/'>
         <StaticImage src='../images/logo/logo_outline_basic.svg'/>
       </Link>

@@ -7,8 +7,8 @@
     position: relative;
     z-index: 0;
     .content{
-        margin: 0 $padding-xs;
-        width: calc(100% - 2 * $padding-xs);
+        margin: 0;
+        width: 100%;
         position: relative;
         z-index: 0;
         min-height: calc(100vh - 16rem);
@@ -17,4 +17,14 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+@media screen and (min-width: $media-medium) {
+    .layout{
+        .content{
+            margin: 0;
+            width: 100%;
+        }
+    }
+    
 }

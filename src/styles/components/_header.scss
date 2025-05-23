@@ -7,8 +7,12 @@
     justify-content: space-between;
     width: 100%;    
     min-height: 4rem;
-    background-color: $color-primary;
+    background-color: transparent;
     padding: $padding-xs $padding-small;
+    transition: background-color 0.3s ease-in-out;
+    &--scrolled{
+        background-color: $color-primary;
+    }
     .logo{
         display: flex;
         align-items: center;

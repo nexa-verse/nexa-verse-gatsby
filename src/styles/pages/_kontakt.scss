@@ -1,11 +1,28 @@
 .contact-hero{
-    margin-top: $padding-big;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: $padding-xs;
     position: relative;
+    min-height: 100vh;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(242, 175, 136, 0) 24%, rgba(242, 175, 136, 1) 100%), url('../images/contact-bg.jpg');
+        background-size: 100% auto, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        opacity: 0.15;
+        pointer-events: none;
+        border-radius: inherit;
+    }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
     .button{
         min-width: 12rem;
     }
@@ -17,9 +34,10 @@
         text-align: center;
     }
     .reviews{
-        bottom: -$padding-medium;
+        position: absolute;
+        bottom: 0;
         left: 50%;
-        // transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
         height: 4rem;
         min-width: 100vw;
         display: flex;
@@ -96,10 +114,6 @@
     justify-content: center;
     gap: $padding-small;
     margin-bottom: $padding-medium;
-    .text-buttons{
-        color: $color-accent2;
-        text-align: center;
-    }
     &__icons{
         display: flex;
         flex-flow: row nowrap;
@@ -116,7 +130,14 @@
                 color: $color-fb;
             }
             &--insta:hover {
-                color: $color-insta;
+                background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+                svg {
+                    fill: transparent;
+                }
             }
             &--linkedin:hover{
                 color: $color-linkedin;
@@ -128,6 +149,9 @@
 @media screen and (min-width: $media-medium) {
     .contact-hero{
         gap: $padding-medium;
+        padding-top: 10rem;
+        width: 100%;
+        padding-bottom: 6rem;
         .buttons-container{
             display: flex;
             flex-direction: row;
@@ -153,15 +177,9 @@
     .contact-cards{
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: $padding-medium;
+        margin-top: $padding-big;
     }
     .socials{
-        .text{
-            max-width: 800px;
-        }
-        &__icons{
-            width: 50%;
-            justify-content: space-between;
-        }
+        max-width: 50%;
     }
 }
