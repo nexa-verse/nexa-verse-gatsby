@@ -75,7 +75,11 @@
 
             }
             
-            
+            input{
+                &:focus, &:focus-visible, &:hover {
+                border-bottom: 2px solid $color-accent2;
+            }
+            }
         }
     .grid{
         display: flex;

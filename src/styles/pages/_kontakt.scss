@@ -130,14 +130,7 @@
                 color: $color-fb;
             }
             &--insta:hover {
-                background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                color: transparent;
-                svg {
-                    fill: transparent;
-                }
+                color: rgba(#ee2a7b, $alpha: .7);
             }
             &--linkedin:hover{
                 color: $color-linkedin;
@@ -178,6 +171,8 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: $padding-big;
+        margin-left: $padding-xs;
+        margin-right: $padding-xs;
     }
     .socials{
         max-width: 50%;

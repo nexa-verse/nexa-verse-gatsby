@@ -51,6 +51,8 @@
 @media screen and (min-width: $media-medium) {
     .footer{
         flex-direction: row;
+        justify-content: space-between;
+        padding: $padding-medium $padding-big;
         &__logo{
             &--desktop{
                 display: block;

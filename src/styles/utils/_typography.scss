@@ -15,8 +15,7 @@
     text-transform: lowercase;
     font-family: $font-headlines;
     font-weight: 900;
-    margin-top: $padding-small;
-    margin-bottom: $padding-small;
+    margin: $padding-small $padding-xs;
     color: $color-primary-light;
 }
 .text{

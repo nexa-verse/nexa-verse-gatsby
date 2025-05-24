@@ -35,6 +35,9 @@
         }
         input {
             background-color: transparent;
+            &:focus, &:focus-visible, &:hover {
+                background-color: $color-accent2;
+            }
         }
         input:focus + .newsletter,
         input:focus-visible + .newsletter {
