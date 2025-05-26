@@ -90,6 +90,10 @@
         color: $color-primary;
         .text{
             color: $color-primary;
+            margin: 0;
+        }
+        .text-buttons{
+            font-size: 1.15rem; 
         }
         .info{
             display: flex;
@@ -114,6 +118,7 @@
     justify-content: center;
     gap: $padding-small;
     margin-bottom: $padding-medium;
+    text-align: center;;
     &__icons{
         display: flex;
         flex-flow: row nowrap;

@@ -32,6 +32,8 @@
             transform: translate(-50%, -3px);
             transition: all 0.3s ease-in-out;
             pointer-events: none;
+            width: 100%;
+            text-align: center;
         }
         input {
             background-color: transparent;
