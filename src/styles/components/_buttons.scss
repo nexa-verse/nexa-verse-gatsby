@@ -37,6 +37,13 @@
     }
     &.accent{
         background-color: $color-accent2;
-        color: $color-primary;
+        color: $color-accent2;
+    }
+    &.accent3{
+        color: $color-accent3;
+    }
+    &.light{
+        border-color: $color-primary-light;
+        color: $color-primary-light;
     }
 }

@@ -1,0 +1,146 @@
+.home-hero{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $padding-xs;
+    position: relative;
+    min-height: 100vh;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(#95B8BF, .80) 25%, rgba(#3C4E59, 1) 100%), url('../images/hero-bg.png');
+        background-size: 100% auto, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        opacity: 0.55;
+        pointer-events: none;
+        border-radius: inherit;
+    }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+    .button{
+        min-width: 12rem;
+    }
+    .headline{
+        margin-top: $padding-big;
+        width: 100%;
+        text-align: center;
+        color: $color-secondary;
+        .uppercase{
+            font-family: inherit;
+            text-transform: uppercase;
+        }
+        .smaller{
+            font-family: inherit;
+            font-size: 3rem;
+            color: $color-primary-light;
+        }
+    }
+    .text .accent{
+        color: $color-accent2;
+    }
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $padding-small;
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $padding-xs;
+        .text{
+            text-align: justify;
+        }
+        .icon{
+            font-size: 3rem;
+            color: $color-accent2;
+        }
+        .accent{
+            color: $color-accent2;
+        }
+    }    
+}
+.infrascan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $padding-small;
+    margin-bottom: $padding-medium;
+    .infrascan-image{
+        margin: $padding-small 0;
+    }
+    .text{
+        .accent{
+            color: $color-accent2;
+        }
+        &:last-of-type{
+            color: $color-primary-light;
+        }
+    }
+    .gain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $padding-xs;
+        margin-top: $padding-small;
+        .accent{
+            color: $color-accent2;
+        }
+        &-item{
+            width: 100%;
+            padding-left: $padding-small;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: $padding-xs;
+            .icon{
+                font-size: 1.5rem;
+                color: $color-success;
+            }
+            .text{
+                text-align: center;
+                color: $color-secondary;
+            }
+        }
+    }
+    .how{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $padding-xs;
+        margin-top: $padding-small;
+        .accent{
+            color: $color-accent2;
+        }
+        &-item{
+            width: 100%;
+            padding-left: $padding-small;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: $padding-xs;
+            .icon{
+                font-size: 1.5rem;
+                color: $color-accent1;
+            }
+            .text{
+                color: $color-secondary;
+                text-align: left;
+            }
+        }
+    }
+}
