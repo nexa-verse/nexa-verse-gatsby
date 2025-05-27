@@ -52,7 +52,7 @@
     .footer{
         flex-direction: row;
         justify-content: space-between;
-        padding: $padding-medium $padding-big;
+        padding: $padding-medium $padding-small;
         &__logo{
             &--desktop{
                 display: block;
@@ -65,5 +65,17 @@
                 display: none;
             }
         }
+    }
+}
+
+@media screen and (min-width: $media-large) {
+    .footer{
+        padding: $padding-medium;
+    }
+}
+
+@media screen and (min-width: $media-xlarge) {
+    .footer{
+        padding: $padding-medium $padding-big;
     }
 }
