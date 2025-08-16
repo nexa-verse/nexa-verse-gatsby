@@ -13,10 +13,19 @@
     font-size: 4.0rem;
     line-height: 4rem;
     text-transform: lowercase;
-    font-family: $font-headlines;
+    font-family: $font-headlines !important;
     font-weight: 900;
     margin: $padding-small $padding-xs;
     color: $color-primary-light;
+    font-family: inherit;
+    .uppercase{
+        text-transform: uppercase;
+    }
+    .smaller{
+        font-family: inherit;
+        font-size: 3rem;
+        color: $color-primary-light;
+    }
 }
 .text{
     font-size: 1rem;
@@ -45,4 +54,14 @@
     margin-bottom: $padding-xs;
     color: $color-secondary;
     text-align: center;
+}
+
+@media screen and (max-width: $media-medium) {
+    .headline{
+        font-size: 3.0rem;
+        line-height: 4rem;
+        .smaller{
+            font-size: 2.0rem;
+        }
+    }
 }

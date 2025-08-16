@@ -31,15 +31,7 @@
         width: 100%;
         text-align: center;
         color: $color-secondary;
-        .uppercase{
-            font-family: inherit;
-            text-transform: uppercase;
-        }
-        .smaller{
-            font-family: inherit;
-            font-size: 3rem;
-            color: $color-primary-light;
-        }
+        
     }
     .text .accent{
         color: $color-accent2;
