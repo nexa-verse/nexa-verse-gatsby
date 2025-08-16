@@ -15,7 +15,7 @@ const Footer = () => {
         <StaticImage src="../images/logo/logo_outline_dark.svg" alt="Logo"/>
       </div>
       <section className="footer__section">
-        <p className="company-name">PRO IT Support Reginald Łuckoś</p>
+        <p className="company-name">Nexa Verse</p>
         <p className="company-localization">
           <PiMapPinAreaFill className="icon" /> 
           <span className='data'>Sterowcowa 13 lok. 2 <br/> 54-130 Wrocław </span>
