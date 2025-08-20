@@ -67,7 +67,7 @@ const IndexPage = () => {
             <p className="text accent">Co zyskujesz?</p>
             <div className="gain-item">
               <IoCheckbox className="icon"/>
-              <p className="text">Kompleksowy przegląd infrastruktury ICT</p>
+              <p className="text">Wstępny przegląd infrastruktury IT</p>
             </div>
             <div className="gain-item">
               <IoCheckbox className="icon"/>
@@ -86,19 +86,19 @@ const IndexPage = () => {
             <p className="text accent">Jak to działa?</p>
             <div className="how-item">
               <PiNumberSquareOneFill className="icon"/>
-              <p className="text">Spotkanie i wstępna konsultacja</p>
+              <p className="text">Konsultacja online - na tym spotkaniu dokonamy przeglądu Twojego IT </p>
             </div>
             <div className="how-item">
               <PiNumberSquareTwoFill className="icon"/>
-              <p className="text">Analiza Twojej infrastruktury IT </p>
+              <p className="text">Opracowanie raportu z wnioskami - raport otrzymasz w PDFie</p>
             </div>
             <div className="how-item">
               <PiNumberSquareThreeFill className="icon"/>
-              <p className="text">Opracowanie raportu z wnioskami</p>
+              <p className="text">Omówienie wyników i rekomendacji - spotkanie online. </p>
             </div>
             <div className="how-item">
               <PiNumberSquareFourFill className="icon"/>
-              <p className="text">Omówienie wyników i rekomendacji.</p>
+              <p className="text">Decyzja dot. dalszej współpracy.</p>
             </div>
           </div>
         </div>
