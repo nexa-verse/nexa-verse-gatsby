@@ -6,7 +6,8 @@
     gap: $padding-xs;
     position: relative;
     min-height: 100vh;
-    margin: 0 -$padding-xs;
+    margin: 0;
+    margin-top: -$padding-xs;
     &::before {
         content: '';
         position: absolute;
