@@ -6,6 +6,7 @@
     gap: $padding-xs;
     position: relative;
     min-height: 100vh;
+    margin: 0 -$padding-xs;
     &::before {
         content: '';
         position: absolute;
@@ -28,6 +29,7 @@
     }
     .headline{
         text-align: center;
+        margin-top: $padding-big;
     }
     .text-buttons{
         color: $color-accent2;
@@ -150,6 +152,10 @@
         padding-top: 10rem;
         width: 100%;
         padding-bottom: 6rem;
+        .headline {
+        text-align: center;
+        margin-top: $padding-small;
+        }
         .buttons-container{
             display: flex;
             flex-direction: row;

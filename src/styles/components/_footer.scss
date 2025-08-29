@@ -16,6 +16,7 @@
         }
         &--mobile{
             display: block;
+            margin-bottom: $padding-small;
         }
     }
     &__section{
@@ -30,12 +31,7 @@
             margin: $padding-xs;
             min-width: 13rem;
 
-        }  
-        .company-name{
-            text-align: center;
-            justify-content: center;
-            font-weight: 600;
-        }
+        } 
         .icon{
             color: $color-accent2;
             font-size: 1.5rem;

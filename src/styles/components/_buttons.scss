@@ -27,24 +27,25 @@
         }
     }
     &--outlined{
-        color: $color-accent2;
         background-color: transparent;
-        border: 2px solid $color-secondary;
+        border: 2px solid;
         &:hover{
             transition: transform 0.2s ease-in-out;
             transform: scale(1.02);
         }
-    }
-    &.accent{
-        background-color: $color-accent2;
+        &.accent{
+        border-color: $color-accent2;
         color: $color-accent2;
+        }
+        &.accent3{
+            border-color: $color-accent3;
+            color: $color-accent3;
+        }
+        &.light{
+            border-color: $color-primary-light;
+            color: $color-primary-light;
+        }
     }
-    &.accent3{
-        color: $color-accent3;
-    }
-    &.light{
-        border-color: $color-primary-light;
-        color: $color-primary-light;
-    }
+    
 }
 

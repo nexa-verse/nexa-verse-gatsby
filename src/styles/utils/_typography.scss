@@ -58,6 +58,7 @@
 
 @media screen and (max-width: $media-medium) {
     .headline{
+        margin-top: $padding-medium;
         font-size: 3.0rem;
         line-height: 4rem;
         .smaller{

@@ -25,7 +25,7 @@ const ContactPage = () => {
           <p className="text">Szukasz partnera, który kompleksowo zadba o całą infrastrukturę IT Twojej firmy? W NexaVerse przejmujemy pełną odpowiedzialność za stabilność, bezpieczeństwo i rozwój Twoich systemów. Napisz lub zadzwoń – wspólnie znajdziemy najlepsze rozwiązania, dzięki którym Twoja firma będzie działać bez zakłóceń! 🚀</p>
           <div className="buttons-container">
             <a href="https://outlook.office.com/owa/calendar/Umwsina360InfraScanbyNexaVerse@nexa-verse.pl/bookings/" target="blank"><Button icon={<MdOutlineHandshake/>} modifier='filled'>Umów spotkanie!</Button></a>
-            <a href="#form"><Button icon={<LuSend/>} modifier='outlined'>Napisz do nas!</Button></a>
+            <a href="#form"><Button icon={<LuSend/>} modifier='outlined' color="accent">Napisz do nas!</Button></a>
           </div>
           <div className="reviews">
             <div className="review-card">

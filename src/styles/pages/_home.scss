@@ -6,6 +6,7 @@
     gap: $padding-xs;
     position: relative;
     min-height: 100vh;
+    margin: 0 -$padding-xs;
     &::before {
         content: '';
         position: absolute;
@@ -69,8 +70,9 @@
     gap: $padding-small;
     margin-bottom: $padding-medium;
     h2{
-        display: inline-flex;
+        display: flex;
         align-items: center;
+        flex-direction: column;
     }
     .subheadline-logo{
         display: inline-block;
@@ -153,7 +155,6 @@
         .headline{
             padding-left: $padding-medium;
             padding-right: $padding-medium;
-            margin-top: $padding-medium
         }
         .text{
             padding-left: $padding-medium;
@@ -182,6 +183,11 @@
     }
 
     .infrascan{
+        h2 {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        }
         .text{
             padding-left: $padding-medium;
             padding-right: $padding-medium;
