@@ -6,7 +6,7 @@
     gap: $padding-xs;
     position: relative;
     min-height: 100vh;
-    margin: 0 -$padding-xs;
+    margin: 0 (-$padding-xs);
     &::before {
         content: '';
         position: absolute;
@@ -57,9 +57,7 @@
             font-size: 3rem;
             color: $color-accent2;
         }
-        .accent{
-            color: $color-accent2;
-        }
+        
     }    
 }
 .infrascan{

@@ -35,6 +35,9 @@
     margin: $padding-xs;
     color: $color-secondary;
     text-align: center;
+    .accent{
+            color: $color-accent2;
+        }
 }
 .text-buttons {
     font-size: 1.25rem;

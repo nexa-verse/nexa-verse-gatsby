@@ -1,0 +1,24 @@
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: $padding-xs;
+    padding: $padding-small;
+    max-width: 200px;
+    cursor: pointer;
+    line-height: 1.25;
+    .icon{
+        color: $color-accent2;
+    }
+    .text{
+        text-align: start !important;
+    }
+    &:hover, &.active{
+        background-color: rgba($color-secondary, $alpha: 0.05);
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+        color: $color-accent1;
+        border-radius: 8px;
+    }
+}
