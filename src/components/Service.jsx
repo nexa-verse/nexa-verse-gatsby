@@ -1,10 +1,13 @@
+import { Link } from 'gatsby'
 import React from 'react'
 
-const Service = ({icon, text, active, onClick}) => {
+const Service = ({icon, text, url}) => {
   return (
-    <li className={active ? "service active" : "service"} onClick={onClick}>
+    <li className="service">
+      <Link to={url} className="service__link">
         {icon && <div className="service__icon">{icon}</div>}
         {text && <p className="service__text">{text}</p>}
+      </Link>
     </li>
   )
 }

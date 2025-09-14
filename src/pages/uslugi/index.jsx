@@ -1,19 +1,17 @@
-import React, {useState} from 'react'
-import Layout from "../components/Layout"
-import Seo from "../components/Seo"
-import Button from "../components/reusable/Button"
-import Signet from "../components/reusable/Signet";
+import React from "react"
+import Layout from "../../components/Layout"
+import Seo from "../../components/Seo"
+import Button from "../../components/reusable/Button"
+import Signet from "../../components/reusable/Signet";
 import { Link } from "gatsby"
 import { MdDownloadDone, MdConnectWithoutContact, MdOutlinePhoneForwarded,MdOutlineSettingsSuggest} from "react-icons/md";
 import { PiNetwork,PiCodeBold } from "react-icons/pi";
 import { TbDatabaseSearch,TbCloudDataConnection,TbShieldCheckFilled } from "react-icons/tb";
 import { StaticImage } from "gatsby-plugin-image";
-import Service from "../components/Service";
-import ProcessPhase from '../components/ProcessPhase';
+import Service from "../../components/Service";
+import ProcessPhase from '../../components/ProcessPhase';
 
 const ServicesPage = () => {
-
-  const [activeService, setActiveService] = useState(null)
 
   return (
     <>
@@ -22,13 +20,13 @@ const ServicesPage = () => {
         <section className="services-intro">
           <h1 className="headline">nasze usługi</h1>
           <StaticImage 
-            src="../images/services-hero.png"
+            src="../../images/services-hero.png"
             alt="Nexa Verse Services"
             placeholder="blurred"
           />
           <p className="text">Jesteśmy firmą z wieloletnim doświadczeniem w zarządzaniu zasobami IT w firmach o zasięgu krajowym i międzynarodowym. Posiadamy rozległą wiedzę w zakresie infrastruktury usług z obszaru ICT, podnoszących efektywność procesów zarządzania Twoim biznesem. Zamiast martwić się o awarie, zabezpieczenia czy rozwój infrastruktury – powierz to ekspertom z <span className="accent">Nexa Verse</span> ! Jako Twój zewnętrzny dział IT, zadbamy o stabilność, bezpieczeństwo i nowoczesność Twojego środowiska cyfrowego.</p>
           <p className="text">👉 Z <span className="accent">Nexa Verse</span>  masz pewność, że technologia pracuje na Twój sukces.</p>
-          <Link to='/kontakt'>
+          <Link to='/kontakt#form'>
             <Button icon={<MdConnectWithoutContact/>} modifier='filled'>
             Napisz do nas
             </Button>
@@ -38,13 +36,13 @@ const ServicesPage = () => {
         <section className="services-what-we-do">
           <h2 className="subheadline">Czym się zajmujemy?</h2>
           <ul className="what-we-do__list">
-            <Service icon={<PiNetwork size={120}/>} text="Zbudujemy stabilną i niezawodną sieć" active={activeService===1?true:false} onClick={() => setActiveService(1)}/>
-            <Service icon={<TbCloudDataConnection  size={120}/>} text="Zadbamy o dostępność i porządek w Twoich danych" active={activeService===2?true:false} onClick={() => setActiveService(2)}/>
-            <Service icon={<TbShieldCheckFilled size={120}/>} text="Zabezpieczymy Twoją firmę przed cyberzagrożeniami" active={activeService===3?true:false} onClick={() => setActiveService(3)}/>
-            <Service icon={<MdOutlinePhoneForwarded size={120}/>} text="Bez zakłóceń połączymy Cię z Twoimi Klientami" active={activeService===4?true:false} onClick={() => setActiveService(4)}/>
-            <Service icon={<PiCodeBold size={120}/>} text="Dobierzemy, wdrożymy i zaopiekujemy się Twoimi systemami wspomagającymi Twój biznes" active={activeService===5?true:false} onClick={() => setActiveService(5)}/>
-            <Service icon={<MdOutlineSettingsSuggest size={120}/>} text="Zadbamy o automatyzację i inteligentne systemy wspierające Twoją działalność" active={activeService===6?true:false} onClick={() => setActiveService(6)}/>
-            <Service icon={<TbDatabaseSearch size={120}/>} text="Zadbamy o bazy danych Microsoft SQL oraz utworzymy zaawansowane raporty i analizy." active={activeService===7?true:false} onClick={() => setActiveService(7)}/>
+            <Service icon={<PiNetwork size={120}/>} text="Zbudujemy stabilną i niezawodną sieć" url='./sieci-komputerowe'/>
+            <Service icon={<TbCloudDataConnection  size={120}/>} text="Zadbamy o dostępność i porządek w Twoich danych" url='./dane'/>
+            <Service icon={<TbShieldCheckFilled size={120}/>} text="Zabezpieczymy Twoją firmę przed cyberzagrożeniami" url='./cyberbezpieczenstwo'/>
+            <Service icon={<MdOutlinePhoneForwarded size={120}/>} text="Bez zakłóceń połączymy Cię z Twoimi Klientami" url='./telekomunikacja'/>
+            <Service icon={<PiCodeBold size={120}/>} text="Dobierzemy, wdrożymy i zaopiekujemy się oprogramowaniem wspomagającym Twój biznes" url='./oprogramowanie'/>
+            <Service icon={<MdOutlineSettingsSuggest size={120}/>} text="Zadbamy o automatyzację i inteligentne systemy wspierające Twoją działalność" url='./automatyzacja'/>
+            <Service icon={<TbDatabaseSearch size={120}/>} text="Zadbamy o bazy danych Microsoft SQL oraz utworzymy zaawansowane raporty i analizy." url='./bazy-danych'/>
           </ul>
         </section>
         <Signet/>
