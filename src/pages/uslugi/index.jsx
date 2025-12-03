@@ -58,12 +58,70 @@ const ServicesPage = () => {
           <h3 className="text-buttons">Nowe technologie? Wyzwania? Jesteśmy na to gotowi!</h3>
           <p className="text">W <span className="accent">Nexa Verse</span> wierzymy, że nie ma jednego, uniwersalnego rozwiązania dla wszystkich. Dlatego stale śledzimy rynek i nie boimy się sięgać po nowoczesne technologie, które mogą dać Twojej firmie przewagę. </p>
           <p className="text">Mamy jednak swoje sprawdzone, ulubione systemy i narzędzia, w których czujemy się jak ryba w wodzie — bo wiemy, że są niezawodne, bezpieczne i skuteczne. Łączymy to, co znamy najlepiej, z tym, co nowe i obiecujące — <span className="accent">zawsze z myślą o Twoim biznesie.</span></p>
-          <div>
-            loga technologii
+          <div className="tech-list">
+            <StaticImage 
+            src="../../images/forti_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/cisco_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/vmware_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            
+            <StaticImage 
+            src="../../images/m365_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/active-directory_logo.svg"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/veeam_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/proget_logo.webp"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            
+            
+            <StaticImage 
+            src="../../images/wp-logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
+            <StaticImage 
+            src="../../images/azure_logo.png"
+            alt="Nexa Verse Services"
+            placeholder="blurred"
+            height={100}
+            />
           </div>
-          <Button icon={<MdDownloadDone/>} modifier='filled' color="accent">
-            Zobacz nasze realizacje!
-          </Button>
+          <Link to='/realizacje'>
+            <Button icon={<MdDownloadDone/>} modifier='filled' color="accent">
+              Zobacz nasze realizacje!
+            </Button>
+          </Link>
         </section>
       </Layout>
     </>

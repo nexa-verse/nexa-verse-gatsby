@@ -52,6 +52,15 @@
         color: $color-accent2;
         text-align: center;
     }
+    .tech-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: $padding-medium;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        padding: $padding-medium 0;        
+    }
 }
 
 @media screen and (min-width: $media-medium){
@@ -59,5 +68,11 @@
         .what-we-do__list{
             justify-content: space-between;
         }
+    }
+}
+
+@media screen and (min-width: $media-large) {
+    .services-what-we-do {
+        max-width: 800px;
     }
 }
