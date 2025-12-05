@@ -34,7 +34,7 @@ const ServiceTemplate = ({ pageContext }) => {
             <div className="service-template__desc" dangerouslySetInnerHTML={{ __html: description }} />
             {/* inne dane */}
             <Link to="/uslugi">
-              <Button icon={<MdOutlineArrowBackIosNew/>} modifier='filled' type="submit" color='accent'>Zobacz inne usługi!</Button>
+              <Button icon={<MdOutlineArrowBackIosNew/>} modifier='outlined' type="submit" color='light'>Zobacz inne usługi!</Button>
             </Link>
         </main>
       </Layout>
