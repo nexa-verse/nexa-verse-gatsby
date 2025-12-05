@@ -23,6 +23,12 @@ const iconMap = {
 
 const ServiceTemplate = ({ pageContext }) => {
   const { shortTitle,title, description, icon } = pageContext
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
+  }, []);
   return (
     <>
       <Seo title={shortTitle} description={title} />
