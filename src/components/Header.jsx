@@ -38,8 +38,7 @@ const Header = () => {
         </div> 
         <Link to='/kontakt'>
           <Button icon={<MdConnectWithoutContact/>} modifier='filled'>
-          Skontaktuj się z nami! 
-          <span className='phone'><FaPhone/>+48 789 173 186</span>
+          Skontaktuj się z nami!
           </Button>
         </Link>       
         
