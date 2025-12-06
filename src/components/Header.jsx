@@ -22,10 +22,10 @@ const Header = () => {
   return (
     <nav className={`navbar${isScrolled || isMobileMenuOpened ? ' navbar--scrolled' : ''}`}>
       <Link className="logo" to='/'>
-        <StaticImage src='../images/logo/logo_outline_basic.svg'/>
+        <StaticImage src='../images/logo/logo_outline_basic.svg' alt='logo-nexaverse'/>
       </Link>
-      <ul className='menu-desktop'>
-        <div className='menu-desktop__links'>
+      <div className='menu-desktop'>
+        <ul className='menu-desktop__links'>
           <li className='link'>
             <Link to='/o-nas'>O nas</Link>
           </li>
@@ -35,16 +35,15 @@ const Header = () => {
           <li className='link'>
             <Link to='/realizacje'>Realizacje</Link>
           </li>
-        </div> 
+        </ul> 
         <Link to='/kontakt'>
           <Button icon={<MdConnectWithoutContact/>} modifier='filled'>
           Skontaktuj się z nami!
           </Button>
-        </Link>       
-        
-      </ul>
-      <ul className={`menu-mobile ${isMobileMenuOpened ? 'menu-mobile--opened' : ''}`}>
-        <div className="menu-mobile__links">
+        </Link>             
+      </div>
+      <div className={`menu-mobile ${isMobileMenuOpened ? 'menu-mobile--opened' : ''}`}>
+        <ul className="menu-mobile__links">
           <li className='link'>
             <Link to='/o-nas' onClick={() => setIsMobileMenuOpened(false)}>O nas</Link>
           </li>
@@ -59,9 +58,8 @@ const Header = () => {
             Skontaktuj się z nami!
             </Button>
           </Link>    
-        </div>
-        
-      </ul>
+        </ul>        
+      </div>
       <button className="hamburger" onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)}>
         {isMobileMenuOpened ? <IoClose/> : <IoMenu/>}
       </button>
